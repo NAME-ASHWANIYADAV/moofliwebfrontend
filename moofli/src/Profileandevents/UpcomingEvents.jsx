@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './UpcomingEvents.css';
-import { fetchUpcomingEvents } from './../api/adminPanel';
-import { MainContext } from './../context/MainContextProvider';
+import { fetchUpcomingEvents } from '../api/adminPanel';
+import { MainContext } from '../context/MainContextProvider';
 
 const UpcomingEvents = () => {
   const { eventData, setEventData } = useContext(MainContext);
