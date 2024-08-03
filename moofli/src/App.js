@@ -7,6 +7,7 @@ import Page1 from './auth/Page1';
 import Login from './auth/Login';
 import SkillThree from './auth/SkillThree';
 import SkillFour from './auth/SkillFour';
+// jhvbjksfvn
 import SkillSix from './auth/SkillSix';
 import SkillSeven from './auth/SkillSeven';
 import Mlogin from './mobileauth/Mlogin';
