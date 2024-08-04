@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Landing from '../landing/Landing';
 import Profile from '../Profile/profile';
 import EditSkillsPage from '../Profile/EditSkills/EditSkillsPage';
 import EditPic from '../Profile/EditPic/EditPic';
@@ -94,7 +95,7 @@ function WebPages({
       {/* -----------------------------MOBILE SIGN UP PAGES-------------------------------- */}
 
       <Routes>
-        {/* <Route path='/' element={<Page setProgress={setProgress} />} /> */}
+        <Route path='/' element={<Landing/>} />
         <Route path='/mlogin' element={<Mlogin setProgress={setProgress} />} />
         <Route
           path='/msignup'
