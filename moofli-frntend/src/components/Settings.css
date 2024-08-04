@@ -1,0 +1,75 @@
+.settings-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    flex: 0 0 250px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 100%;
+  }
+  
+  .settings-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .settings-header {
+    margin-bottom: 20px;
+    font-size: large;
+    font-weight:500;
+  }
+  
+  .settings-options {
+    margin-bottom: 20px;
+  }
+  
+  .logout-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logout-button img {
+    margin-right: 10px;
+  }
+  
+  .profile-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 400px;
+  }
+  
+  .add-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background-color: #0056b3;
+  }
+  
