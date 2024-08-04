@@ -8,36 +8,6 @@ import TopBar from './CommonTopBar/TopBar';
 import { useNavigate } from 'react-router-dom';
 import WebPages from './Maincomp/index.js';
 import { MainContext } from './context/MainContextProvider';
-export const pagesToNotRedirect = [ //react-top-loading-bar emoji-picker-react
-  '/',
-  '/mlogin',
-  '/msignup',
-  '/mpersonal',
-  '/mcontact',
-  '/mskill',
-  '/mstudinfo',
-  '/mprofinfo',
-  '/mcover',
-  '/msocial',
-  '/signup',
-  '/login',
-  '/skill1',
-  '/skill2',
-  '/skill3',
-  '/skill4',
-  '/skill5',
-  '/skill6',
-  '/skill7',
-  '/loginn',
-  '/about',
-  '/contact',
-  '/privacy-policy',
-  '/terms-of-service',
-  '/faqs',
-  '/careers',
-  '/resetpassword',
-  '/password/reset',
-];
 
 function App() {
   const [userData, setUserData] = useState(null);
