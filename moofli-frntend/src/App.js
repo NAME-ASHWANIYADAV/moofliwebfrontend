@@ -1,20 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './components/Dashboard';
+import Home from './components/Home';
 import NewDiary from './components/NewDiary';
-import './App.css';
 
-const App = () => {
+function App() {
   return (
     <Router>
       <div className="app">
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/new-diary" element={<NewDiary />} />
-        </Routes>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/new-diary" element={<NewDiary />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
-};
+}
 
 export default App;
