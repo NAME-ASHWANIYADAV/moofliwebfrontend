@@ -1,42 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Chat from '../Landing/chatroom';
-import Dashboard from '../dashboard/Slots';
-import Account from '../dashboard/account';
-import Bookings from '../dashboard/bookings';
-import Earning from '../dashboard/earnings';
-import Post from '../Landing/Post';
-import Notification from '../Landing/notifications/notification';
-import PublicProfile from '../PublicProfile/PublicProfile';
-import Otherpost from '../Landing/Otherpost';
 import Profile from '../Profile/profile';
-import Searchbar from '../Searchbar';
-import Addskills from '../Page9';
-import Bookslot from '../Bookslot';
-import UserPost from '../UserPosts/UserPosts';
 import EditSkillsPage from '../Profile/EditSkills/EditSkillsPage';
-import ConfirmBooking from '../dashboard/bookings/ConfirmBooking';
-import Payment from '../dashboard/bookings/Payment';
 import EditPic from '../Profile/EditPic/EditPic';
-
-import RequestedMeets from '../dashboard/requestedMeets';
-import MentorBano from '../MentorBano/mentorBano';
-import PlatformfeedbackForm from '../PlatfromFeedback/PlatformfeedbackForm';
-import MentorfeedbackForm from '../MentorFeedback/feedbackForm';
-import ChangePasswordPage from '../passwordChange/changepassword';
-import ResetPasswordPage from '../resetpassword/resetpassword';
-import ResetPasswordEmail from '../resetpassword/resetpasswordEmail';
-import Admin from '../Admin Panel/Admin';
-import PublicPost from '../PublicPost';
-import Page from '../../landing/Page';
 import Page1 from '../auth/Page1';
 import Login from '../auth/Login';
 import SkillThree from '../auth/SkillThree';
 import SkillFour from '../auth/SkillFour';
-import About from '../Misc Pages/About';
-import Contact from '../Misc Pages/Contact';
-import PrivacyPolicy from '../Misc Pages/PrivacyPolicy';
-import Faqs from '../Misc Pages/Faqs';
 import SkillSix from '../auth/SkillSix';
 import SkillSeven from '../auth/SkillSeven';
 import Mlogin from '../mobileauth/Mlogin';
@@ -48,17 +18,6 @@ import MStudentInfo from '../mobileauth/MStudentInfo';
 import MProfInformation from '../mobileauth/MProfInformation';
 import Cover from '../mobileauth/Cover';
 import Social from '../mobileauth/Social';
-import SideNav from '../SideNav/SideNav';
-import TermsOfService from '../Misc Pages/TermsOfService';
-import AuthorizeZoomMeet from '../dashboard/bookings/AuthorizeZoomMeet';
-
-// import HashtagPage from '../../api/hashtag';
-import Student_Dasboard from '../SocietyMember/DashBoard/dashboard'
-import NotFoundPage from '../NotFoundPage/NotFoundPage';
-import Admin_Users from '../Admin Panel/Admin_Users';
-import Admin_Dashboard from '../Admin Panel/Admin_Dashboard';
-import CreateEvent from '../Admin Panel/CreateEvent';
-
 
 function WebPages({
   userData,
@@ -121,7 +80,7 @@ function WebPages({
 
   return (
     <>
-      {shouldRender && userData && (
+      {/* {shouldRender && userData && (
         <SideNav
           setProgress={setProgress}
           Mentor={Mentor}
@@ -130,12 +89,12 @@ function WebPages({
           isFetched={isFetched}
           notifyList={notifyList}
         />
-      )}
+      )} */}
 
       {/* -----------------------------MOBILE SIGN UP PAGES-------------------------------- */}
 
       <Routes>
-        <Route path='/' element={<Page setProgress={setProgress} />} />
+        {/* <Route path='/' element={<Page setProgress={setProgress} />} /> */}
         <Route path='/mlogin' element={<Mlogin setProgress={setProgress} />} />
         <Route
           path='/msignup'
@@ -188,17 +147,17 @@ function WebPages({
 
         {/* -----------------------------MISCELLANEOUS PAGES------------------------------ */}
 
-        <Route path='/about' element={<About />} />
+        {/* <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/careers' element={<Faqs />} />
-        <Route path='/terms-of-service' element={<TermsOfService />} />
+        <Route path='/terms-of-service' element={<TermsOfService />} /> */}
 
         {/* -----------------------------MAIN WEB PAGES------------------------------ */}
 
-        <Route path='post/:postId' element={<PublicPost />} />
+        {/* <Route path='post/:postId' element={<PublicPost />} /> */}
 
-        <Route
+        {/* <Route
           path='/homepage'
           element={
             <Post
@@ -217,24 +176,24 @@ function WebPages({
               setNotifyList={setNotifyList}
             />
           }
-        />
+        /> */}
 
-        <Route
+        {/* <Route
           path='/chat'
           element={
             userData && <Chat userData={userData} setProgress={setProgress} />
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path='/myaccount'
           element={
             userData && (
               <Account userData={userData} setProgress={setProgress} />
             )
           }
-        />
+        /> */}
 
-        <Route
+        {/* <Route
           path='/userposts/:id'
           element={<UserPost setProgress={setProgress} />}
         />
@@ -308,13 +267,13 @@ function WebPages({
               setUserData={setUserData}
             />
           }
-        />
-        <Route path='/dashboard' element={<Student_Dasboard/>}/>
+        /> */}
+        {/* <Route path='/dashboard' element={<Student_Dasboard/>}/> */}
         <Route
           path='/profile'
           element={<Profile setProgress={setProgress} />}
         />
-        <Route
+        {/* <Route
           path='/Admin_Users'
           element={<Admin_Users setProgress={setProgress} />}
         />
@@ -329,9 +288,9 @@ function WebPages({
         <Route
           path='/searchbar'
           element={<Searchbar setProgress={setProgress} />}
-        />
+        /> */}
 
-        <Route
+        {/* <Route
           path='/authskill'
           element={
             <Addskills
@@ -366,10 +325,10 @@ function WebPages({
         <Route
           path='/payment/:userId'
           element={<Payment setProgress={setProgress} />}
-        />
+        /> */}
 
         {/* Password resetting / forget password */}
-        <Route path='/changePassword' element={<ChangePasswordPage />} />
+        {/* <Route path='/changePassword' element={<ChangePasswordPage />} />
         <Route path='/password/reset/:id' element={<ResetPasswordPage />} />
         <Route path='/resetPasswordEmail' element={<ResetPasswordEmail />} />
 
@@ -378,7 +337,7 @@ function WebPages({
         <Route
           path='/platformfeedback'
           element={<PlatformfeedbackForm setProgress={setProgress} />}
-        />
+        /> */}
 
         {/* <Route
           path='/hashtag/:hashtag'
@@ -396,8 +355,8 @@ function WebPages({
         />
 
         {/* ADMIN ROUTE */}
-        <Route path='/admin/skillop-dtu/1941' element={<Admin />} />
-        <Route path="*" element={<NotFoundPage />} />
+        {/* <Route path='/admin/skillop-dtu/1941' element={<Admin />} /> */}
+        {/* <Route path="*" element={<NotFoundPage />} /> */}
       </Routes>
     </>
   );
