@@ -1,16 +1,16 @@
 import React, { useContext } from 'react';
-import { getUser } from './../api/userRequest';
-import linkedin from '../../images/linkedin.png';
-import userPic from '../../images/user.png';
+import { getUser } from '../api/userRequest';
+import linkedin from '../images/linkedin.png';
+import userPic from '../images/user.png';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import defaultBGPic from '../../images/Robo.png';
-import { fetchUpcomingEvents } from './../api/adminPanel';
-import { MainContext } from './../context/MainContextProvider';
-import allTag from '../../images/allTag.png';
-import societytag from '../../images/member.png';
-import mentortag from '../../images/mentor tag.png'
+import defaultBGPic from '../images/Robo.png';
+import { fetchUpcomingEvents } from '../api/adminPanel';
+import { MainContext } from '../context/MainContextProvider';
+import allTag from '../images/allTag.png';
+import societytag from '../images/member.png';
+import mentortag from '../images/mentor tag.png';
 export default function Profileandevents({ userData, isHome, useUserData }) {
   const navigate = useNavigate();
   const [userDetails, setUserDetails] = useState(null);
