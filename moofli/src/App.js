@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-// import './App.css';
+import './App.css';
 import { getUser } from './api/userRequest';
 import toast, { Toaster } from 'react-hot-toast';
 import LoadingBar from 'react-top-loading-bar';
