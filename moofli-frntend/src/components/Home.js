@@ -3,7 +3,7 @@ import Sidebar from './Sidebar';
 import Post from './Post';
 import Calendar from './Calendar';
 import Profile from './Profile';
-import './Dashboard.css';
+import './Home.css';
 
 const Dashboard = () => {
   return (

@@ -1,27 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="logo">
-      <img src="/images/logo.png" alt="Moofli Logo" />
-       <span>MOOFLI</span>
+        <img src="/images/logo.png" alt="Moofli Logo" />
+        <span>MOOFLI</span>
       </div>
       <nav>
         <ul>
           <li>
-            <a href="home.html"><img src="/images/home.png" alt="Home"/>Home</a>
+            <Link to="/"><img src="/images/home.png" alt="Home" />Home</Link>
           </li>
           <li>
-          <a href="profile.html"><img src="/images/profile.png" alt="Profile"/>Profile</a>
+            <Link to="/profile"><img src="/images/profile.png" alt="Profile" />Profile</Link>
           </li>
           <li>
-          <a href="settings.html"><img src="/images/settings.png" alt="Settings"/>Settings</a>
+            <Link to="/settings"><img src="/images/settings.png" alt="Settings" />Settings</Link>
           </li>
         </ul>
       </nav>
-      <button className="logout"><img src="/images/Log-out.png" alt="logoutimg"/>Logout Account</button>
+      <button className="logout"><img src="/images/Log-out.png" alt="Logout" />Logout Account</button>
     </div>
   );
 };
