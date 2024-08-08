@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://skillop.in' });
+const API = axios.create({ baseURL: 'http://93.127.172.217:2024' });
 
 export const postSlot = (data) => {
   const token = localStorage.getItem('skilloptoken');
