@@ -1,9 +1,9 @@
 .settings-page {
     display: flex;
     height: 100vh;
-  }
-  
-  .sidebar {
+}
+
+.sidebar {
     flex: 0 0 250px;
     background-color: #f8f8f8;
     padding: 20px;
@@ -11,27 +11,27 @@
     flex-direction: column;
     justify-content: start;
     height: 100%;
-  }
-  
-  .settings-content {
+}
+
+.settings-content {
     display: flex;
     flex-direction: column;
     flex: 1;
     padding: 20px;
     position: relative;
-  }
-  
-  .settings-header {
+}
+
+.settings-header {
     margin-bottom: 20px;
     font-size: large;
-    font-weight:500;
-  }
-  
-  .settings-options {
+    font-weight: 500;
+}
+
+.settings-options {
     margin-bottom: 20px;
-  }
-  
-  .logout-button {
+}
+
+.logout-button {
     background: none;
     border: none;
     color: red;
@@ -39,20 +39,20 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-  }
-  
-  .logout-button img {
+}
+
+.logout-button img {
     margin-right: 10px;
-  }
-  
-  .profile-wrapper {
+}
+
+.profile-wrapper {
     position: absolute;
     top: 10px;
     right: 30px;
     width: 400px;
-  }
-  
-  .add-button {
+}
+
+.add-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -67,9 +67,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  }
-  
-  .add-button:hover {
+}
+
+.add-button:hover {
     background-color: #0056b3;
-  }
-  
+}

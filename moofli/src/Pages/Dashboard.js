@@ -3,7 +3,7 @@ import Sidebar from './Sidebar';
 import Post from './Post';
 import Calendar from './Calendar';
 import Profile from './Profile';
-import './Home.css';
+import '../Pages/Dashboard.css';
 
 const Dashboard = () => {
   return (
@@ -14,7 +14,6 @@ const Dashboard = () => {
           <Post date="16" day="MON" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam." />
           <Post date="15" day="SUN" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam." />
           <Post date="14" day="SAT" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam." />
-         
         </div>
         <div className="sidebar-right">
           <Calendar />

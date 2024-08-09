@@ -1,0 +1,56 @@
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    flex: 0 0 250px;
+    background-color: #f8f8f8; 
+    padding: 20px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  
+  .posts {
+    flex: 2; 
+    margin-right: 20px;
+  }
+  
+  .sidebar-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .calendar {
+    margin-bottom: 20px;
+  }
+  
+  .add-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #0037ff92;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-button:hover {
+    background-color: #0037ff92;
+  }

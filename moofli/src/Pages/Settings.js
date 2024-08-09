@@ -1,7 +1,7 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import Profile from './Profile';
-import './Settings.css';
+import '../styles/Settings.css';
 
 const Settings = () => {
   return (
