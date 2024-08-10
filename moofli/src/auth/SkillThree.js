@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import Nav from './Nav';
 import doodle1 from '../images/doodle-6 1.png';
 import doodle2 from '../images/doodle-7 1.png';
@@ -79,26 +80,36 @@ const SkillThree = ({ setProgress }) => {
           Complete Your Profile
         </h1>
         <div className='flex items-center gap-[10vh]'>
-          <div className='flex items-start justify-center flex-col text-xl gap-8 mt-3 font-normal'>
-            {window.location.pathname === '/skill3' ? (
-              <span className='font-semibold'>Skills/Interests</span>
-            ) : (
-              <span>Skills/Interests</span>
+          <div className="flex items-start justify-center flex-col text-xl gap-8 mt-3 font-normal">
+            {window.location.pathname === "/skill1" ? (
+                <span className="font-semibold">Personal Information</span>
+                ) : (
+                <Link to="/skill1"><span>Personal Information</span></Link>
             )}
-            {window.location.pathname === '/skill4' ? (
-              <span className='font-semibold'>Education Information</span>
-            ) : (
-              <span>Education Information</span>
+            {window.location.pathname === "/skill2" ? (
+                <span className="font-semibold">Contact Information</span>
+                ) : (
+                <Link to="/skill2"><span>Contact Information</span></Link>
             )}
-            {window.location.pathname === '/skill6' ? (
-              <span className='font-semibold'>Cover & Profile Photos</span>
+            {window.location.pathname === "/skill3" ? (
+                <span className="font-semibold">Skills/Interests</span>
             ) : (
-              <span>Cover & Profile Photos</span>
+                <Link to="/skill3"><span>Skills/Interests</span></Link>
             )}
-            {window.location.pathname === '/skill7' ? (
-              <span className='font-semibold'>Additional Information</span>
+            {window.location.pathname === "/skill4" ? (
+                <span className="font-semibold">Education Information</span>
             ) : (
-              <span>Additional Information</span>
+                <Link to="/skill4"><span>Education Information</span></Link>
+            )}
+            {window.location.pathname === "/skill6" ? (
+                <span className="font-semibold">Cover & Profile Photos</span>
+            ) : (
+                <Link to="/skill6"><span>Cover & Profile Photos</span></Link>
+            )}
+            {window.location.pathname === "/skill7" ? (
+                <span className="font-semibold">Additional Information</span>
+            ) : (
+                <Link to="/skill7"><span>Additional Information</span></Link>
             )}
           </div>
 

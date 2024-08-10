@@ -13,7 +13,6 @@
   .calendar-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
   
   .calendar-day {

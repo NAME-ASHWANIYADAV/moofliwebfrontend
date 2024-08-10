@@ -24,6 +24,7 @@ import Social from '../mobileauth/Social';
 import Post from '../Components/Post';
 import Dashboard from '../Pages/Dashboard';
 import Settings from '../Pages/Settings.js';
+import NewDiary from '../Components/NewDiary.js';
 function WebPages({
   userData,
   setUserData,
@@ -274,6 +275,10 @@ function WebPages({
         <Route
           path='/settings'
           element={<Settings setProgress={setProgress} />}
+        />
+        <Route
+          path='/new-diary'
+          element={<NewDiary setProgress={setProgress} />}
         />
         {/* <Route
           path='/Admin_Users'

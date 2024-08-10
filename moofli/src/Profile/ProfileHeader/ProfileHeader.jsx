@@ -3,6 +3,7 @@ import './ProfileHeader.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { getUser } from '../../api/userRequest';
 import userPic from '../../images/user.png';
+import editpic from '../../images/ic_baseline-edit.png';
 import defaultBGPic from '../../images/bg.png';
 import IntroVideo from '../Right Profile/IntroVideo';
 import Following from '../Right Profile/Following';
@@ -10,6 +11,7 @@ import Followers from '../Right Profile/Followers';
 import allTag from '../../images/allTag.png';
 import societytag from '../../images/member.png';
 import mentortag from '../../images/mentor tag.png'
+import linkedin from '../../images/mdi_linkedin.png'
 import { MainContext } from '../../context/MainContextProvider';
 
 const ProfileHeader = () => {
@@ -113,6 +115,7 @@ const ProfileHeader = () => {
             </div>
           )}
         </div>
+        
         <div className='ph-headline2'>
           {userDetails &&
           userDetails.experence &&
@@ -140,13 +143,16 @@ const ProfileHeader = () => {
             >
               My Posts
             </div>
-            <Link to='/editpic'>
-              <img
-                src='/editpic.png'
-                className='w-14 sm:w-13 rounded-full p-1 cursor-pointer hover:bg-gray-100'
-                alt='edit pic'
-              />
-            </Link>
+            <div className='edit-profile'>
+              <Link to='/editpic'>
+                <img
+                  src={editpic}
+                  className="edit-pic-image"
+                  alt='edit pic'
+                />
+                <div className='edit-pic-name'>Edit Profile</div>
+              </Link>
+            </div>
           </div>
         </div>
         <div className='ph-follow'>
@@ -176,7 +182,7 @@ const ProfileHeader = () => {
           </div>
         </div>
         <div className='ph-linkedin'>
-          <img src='/linkedin.png' alt='' />
+          <img src={linkedin} alt='' />
           <p>
             {' '}
             <a

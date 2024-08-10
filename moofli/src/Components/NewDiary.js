@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-import { Quill } from 'react-quill';
-import ImageUploader from 'quill-image-uploader';
 import Sidebar from './Sidebar';
 import './NewDiary.css';
-
-
-Quill.register('modules/imageUploader', ImageUploader);
 
 const NewDiary = () => {
   const [editorState, setEditorState] = useState('');
@@ -15,35 +10,35 @@ const NewDiary = () => {
   const modules = {
     toolbar: {
       container: "#toolbar",
-      handlers: {
-        'image': function() {
-          const input = document.createElement('input');
-          input.setAttribute('type', 'file');
-          input.setAttribute('accept', 'image/*');
-          input.click();
+    //   handlers: {
+    //     'image': function() {
+    //       const input = document.createElement('input');
+    //       input.setAttribute('type', 'file');
+    //       input.setAttribute('accept', 'image/*');
+    //       input.click();
 
-          input.onchange = async () => {
-            const file = input.files[0];
-            const reader = new FileReader();
-            reader.readAsDataURL(file);
-            reader.onload = () => {
-              const range = this.quill.getSelection();
-              this.quill.insertEmbed(range.index, 'image', reader.result);
-            };
-          };
-        }
-      }
-    },
-    imageUploader: {
-      upload: file => {
-        return new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.addEventListener('load', () => {
-            resolve(reader.result);
-          });
-          reader.readAsDataURL(file);
-        });
-      }
+    //       input.onchange = async () => {
+    //         const file = input.files[0];
+    //         const reader = new FileReader();
+    //         reader.readAsDataURL(file);
+    //         reader.onload = () => {
+    //           const range = this.quill.getSelection();
+    //           this.quill.insertEmbed(range.index, 'image', reader.result);
+    //         };
+    //       };
+    //     }
+    //   }
+    // },
+    // imageUploader: {
+    //   upload: file => {
+    //     return new Promise((resolve, reject) => {
+    //       const reader = new FileReader();
+    //       reader.addEventListener('load', () => {
+    //         resolve(reader.result);
+    //       });
+    //       reader.readAsDataURL(file);
+    //     });
+    // }
     }
   };
 
@@ -60,7 +55,8 @@ const NewDiary = () => {
         <div className="diary-header">
           <span>{handleDate()}</span>
         </div>
-        <ReactQuill 
+        <ReactQuill
+          theme="snow"
           value={editorState}
           onChange={setEditorState}
           modules={modules}
