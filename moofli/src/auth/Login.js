@@ -140,7 +140,7 @@ const Login = () => {
               </div>
 
               <span class='ml-2 text-md text-[#7E8B9E] '>
-                Not a part of SKILLOP Community?
+                Not a part of MOOFLI Community?
                 <span
                   class='text-blue-600 mx-2 cursor-pointer'
                   onClick={() => navigate('/signup')}

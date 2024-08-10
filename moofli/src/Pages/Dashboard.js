@@ -1,8 +1,8 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import Post from './Post';
-import Calendar from './Calendar';
-import Profile from './Profile';
+import Sidebar from '../Components/Sidebar';
+import Post from '../Components/Post';
+import Calendar from '../Components/Calendar';
+import Profile2 from '../Components/Profile2.js';
 import '../Pages/Dashboard.css';
 
 const Dashboard = () => {
@@ -17,7 +17,7 @@ const Dashboard = () => {
         </div>
         <div className="sidebar-right">
           <Calendar />
-          <Profile />
+          {/* <Profile2/> */}
         </div>
       </div>
       <button className="add-button" onClick={() => window.location.href = '/new-diary'}>

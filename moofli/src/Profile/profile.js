@@ -20,6 +20,7 @@ import toast from "react-hot-toast";
 import Mobilecommonhead from "../Mobilecommonhead";
 import ProfileHeader from "./ProfileHeader/ProfileHeader";
 import UpcomingEvents from "../Profileandevents/UpcomingEvents";
+import Sidebar from "../Components/Sidebar";
 
 const Profile = ({ setProgress }) => {
   const [updateDom, setUpdateDom] = useState(false);
@@ -215,7 +216,9 @@ const Profile = ({ setProgress }) => {
 
   return (
     <>
-      <Mobilecommonhead />
+      <div className="side-bar">
+        <Sidebar/>
+      </div>
       <ProfileHeader />
       <UpcomingEvents />
       <div className="main-profile-page">

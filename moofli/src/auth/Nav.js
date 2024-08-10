@@ -8,7 +8,7 @@ const Nav = () => {
         <div className="flex items-center justify-center gap-3">
           {" "}
           <img src={coolimg} width={25} />
-          <h1 className="font-bold text-xl">SKILLOP</h1>
+          <h1 className="font-bold text-xl">MOOFLI</h1>
         </div>
         <div className=" gap-5 hidden">
           <button className="py-2 px-9 rounded-xl text-sm font-bold shadow-md bg-[#FFB800]">

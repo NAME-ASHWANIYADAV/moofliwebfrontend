@@ -18,7 +18,7 @@ const Landing = () => {
             MOOFLI
           </div>
         </div>
-        <Link to="/mlogin">
+        <Link to="/login">
         <div className='login-container'>
           <div className='login-txt-container'>
             <div className='login-txt'>
@@ -54,12 +54,15 @@ const Landing = () => {
           </div>          
         </div>
 
-        <div className='sign-in-button-container'>
-          <div className='sign-in'>
-            Sign in 
+        
+          <div className='sign-in-button-container'>
+            <Link to="/">
+              <div className='sign-in'>
+                Sign in 
+              </div>
+            </Link>
           </div>
-        </div>
-
+        
       </div>
 
       <div className='background-landing-image-container'>

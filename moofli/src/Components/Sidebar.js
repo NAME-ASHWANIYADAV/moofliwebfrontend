@@ -1,28 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import skillop from '../images/skillop.png'
+import home from '../images/octicon_home-16.png'
+import setting from '../images/tabler_settings.png'
+import profile from '../images/gg_profile.png'
+import log_out from '../images/Log-out.png'
 import './Sidebar.css';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="logo">
-        <img src="/images/logo.png" alt="Moofli Logo" />
+        <img src={skillop}/>
         <span>MOOFLI</span>
       </div>
       <nav>
         <ul>
           <li>
-            <Link to="/"><img src="/images/home.png" alt="Home" />Home</Link>
+            <Link to="/homepage"><img src={home} alt="Home" />Home</Link>
           </li>
           <li>
-            <Link to="/profile"><img src="/images/profile.png" alt="Profile" />Profile</Link>
+            <Link to="/profile"><img src={profile} alt="Profile" />Profile</Link>
           </li>
           <li>
-            <Link to="/settings"><img src="/images/settings.png" alt="Settings" />Settings</Link>
+            <Link to="/settings"><img src={setting} alt="Settings" />Settings</Link>
           </li>
         </ul>
       </nav>
-      <button className="logout"><img src="/images/Log-out.png" alt="Logout" />Logout Account</button>
+      <button className="logout"><img src={log_out} className="Logout" />Logout Account</button>
     </div>
   );
 };

@@ -28,7 +28,7 @@
 }
 
 .settings-options {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .logout-button {
@@ -71,4 +71,19 @@
 
 .add-button:hover {
     background-color: #0056b3;
+}
+
+.LogOut{
+    width: 30px;
+    height: 30px;
+}
+.line{
+    width: 584px;
+    height: 0px;
+    top: 88px;
+    left: 312px;
+    gap: 0px;
+    border: 3px;
+    border: 3px solid #00000033;
+    margin-bottom: 5px;
 }

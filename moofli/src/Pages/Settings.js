@@ -1,7 +1,7 @@
 import React from 'react';
-import Sidebar from './Sidebar';
-import Profile from './Profile';
-import '../styles/Settings.css';
+import Sidebar from '../Components/Sidebar';
+import log_out from '../images/Log-out.png'
+import './Settings.css';
 
 const Settings = () => {
   return (
@@ -11,15 +11,14 @@ const Settings = () => {
         <div className="settings-header">
           <p>Edit Account Information</p>
         </div>
+        <div className="line"></div>
         <div className="settings-options">
           <button className="logout-button">
-            <img src="/images/Log-out.png" alt="Log Out" />
+            <img src={log_out} className="LogOut" />
             Log Out
           </button>
         </div>
-        <div className="profile-wrapper">
-          <Profile />
-        </div>
+        <div className="line"></div>
       </div>
       <button className="add-button" onClick={() => window.location.href = '/new-diary'}>
         +

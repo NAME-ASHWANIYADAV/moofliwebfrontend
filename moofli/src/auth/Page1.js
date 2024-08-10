@@ -41,7 +41,7 @@ const Page1 = ({ setProgress }) => {
         localStorage.setItem('current-user-id', data.result._id);
         toast.success(data.message);
         setCurrentUser(data.result);
-        navigate('/homepage');
+        navigate('/skill3');
       } else {
         toast.error(data.message);
       }
@@ -145,8 +145,8 @@ const Page1 = ({ setProgress }) => {
                     }
                   />
                   <span class='ml-2 text-sm'>
-                    By signing up, you are creating a SKILLOP account, and you
-                    agree to SKILLOP’s{' '}
+                    By signing up, you are creating a MOOFLI account, and you
+                    agree to MOOFLI’s{' '}
                     <Link to='/terms-of-service' class='text-blue-600'>
                       Terms of Service
                     </Link>{' '}
@@ -168,7 +168,7 @@ const Page1 = ({ setProgress }) => {
                     </a>{' '}
                     of{' '}
                     <a href='#' class='text-blue-600'>
-                      SKILLOP Community
+                      MOOFLI Community
                     </a>
                   </span>
                 </label>
@@ -198,7 +198,7 @@ const Page1 = ({ setProgress }) => {
               </div>
 
               <span class='ml-2 text-md text-[#7E8B9E] '>
-                Already a part of SKILLOP Community ?
+                Already a part of MOOFLI Community ?
                 <a href='/login' class='text-blue-600 mx-2'>
                   LOGIN
                 </a>

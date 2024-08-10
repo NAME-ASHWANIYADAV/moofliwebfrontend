@@ -70,3 +70,7 @@ li img {
 .logout:hover {
   background-color: #ececec;
 }
+.logout{
+  width: 30px;
+  height: 30px;
+}

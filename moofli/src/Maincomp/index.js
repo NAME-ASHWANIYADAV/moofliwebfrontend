@@ -6,6 +6,8 @@ import EditSkillsPage from '../Profile/EditSkills/EditSkillsPage';
 import EditPic from '../Profile/EditPic/EditPic';
 import Page1 from '../auth/Page1';
 import Login from '../auth/Login';
+import SkillOne from '../auth/SkillOne';
+import SkillTwo from '../auth/SkillTwo';
 import SkillThree from '../auth/SkillThree';
 import SkillFour from '../auth/SkillFour';
 import SkillSix from '../auth/SkillSix';
@@ -19,7 +21,9 @@ import MStudentInfo from '../mobileauth/MStudentInfo';
 import MProfInformation from '../mobileauth/MProfInformation';
 import Cover from '../mobileauth/Cover';
 import Social from '../mobileauth/Social';
-
+import Post from '../Components/Post';
+import Dashboard from '../Pages/Dashboard';
+import Settings from '../Pages/Settings.js';
 function WebPages({
   userData,
   setUserData,
@@ -67,7 +71,6 @@ function WebPages({
     '/admin/skillop-dtu/1941',
     '/Admin_Dashboard' ,
     '/Admin_Users'
-
     // Add more routes as needed
   ];
 
@@ -127,6 +130,14 @@ function WebPages({
         <Route path='/login' element={<Login setProgress={setProgress} />} />
         {/* Skills page */}
         <Route
+          path='/skill1'
+          element={<SkillOne setProgress={setProgress} />}
+        />
+        <Route
+          path='/skill2'
+          element={<SkillTwo setProgress={setProgress} />}
+        />
+        <Route
           path='/skill3'
           element={<SkillThree setProgress={setProgress} />}
         />
@@ -158,26 +169,12 @@ function WebPages({
 
         {/* <Route path='post/:postId' element={<PublicPost />} /> */}
 
-        {/* <Route
+        <Route
           path='/homepage'
           element={
-            <Post
-              userData={userData}
-              setUserData={setUserData}
-              setProgress={setProgress}
-              Mentor={Mentor}
-              isAdmin={isAdmin}
-              isSocietyMember={isSocietyMember}
-              setIsAdmin={setIsAdmin}
-              setIsSocietyMember={setIsSocietyMember}
-              isFetched={isFetched}
-              notifyList={notifyList}
-              setMentor={setMentor}
-              setIsFetched={setIsFetched}
-              setNotifyList={setNotifyList}
-            />
+            <Dashboard/>
           }
-        /> */}
+        />
 
         {/* <Route
           path='/chat'
@@ -273,6 +270,10 @@ function WebPages({
         <Route
           path='/profile'
           element={<Profile setProgress={setProgress} />}
+        />
+        <Route
+          path='/settings'
+          element={<Settings setProgress={setProgress} />}
         />
         {/* <Route
           path='/Admin_Users'
