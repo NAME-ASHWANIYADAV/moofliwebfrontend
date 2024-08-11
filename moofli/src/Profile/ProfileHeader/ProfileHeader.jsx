@@ -150,7 +150,6 @@ const ProfileHeader = () => {
                   className="edit-pic-image"
                   alt='edit pic'
                 />
-                <div className='edit-pic-name'>Edit Profile</div>
               </Link>
             </div>
           </div>

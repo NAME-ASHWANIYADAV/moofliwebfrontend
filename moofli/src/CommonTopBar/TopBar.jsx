@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import './TopBar.css';
 import { useNavigate } from 'react-router-dom';
 import { MainContext } from '../context/MainContextProvider';
-
+import skillop from '../images/skillop.png';
 const TopBar = () => {
   const { setShowPostPopUp } = useContext(MainContext);
   const navigate = useNavigate();
@@ -20,8 +20,8 @@ const TopBar = () => {
   return (
     <div className='tb-container '>
       <div>
-        <img src='/skillop-logo.png' alt='logo' className='w-10  hover:transform hover:scale-105 transition duration-300' />
-        <h2 className='hover:transform hover:scale-105 transition duration-300 '>SKILLOP</h2>
+        <img src={skillop} alt='logo' className='w-10  hover:transform hover:scale-105 transition duration-300' />
+        <h2 className='hover:transform hover:scale-105 transition duration-300 '>MOOFLI</h2>
       </div>
       {window.location.pathname === '/homepage' && (
         <button id='create-post' onClick={createPost}>
